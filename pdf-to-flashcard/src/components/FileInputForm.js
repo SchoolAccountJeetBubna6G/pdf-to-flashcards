@@ -15,12 +15,12 @@ function FileInputForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Choose a file:
-        <input type="file" onChange={handleFileChange} />
+      <label className="UB">
+        <input type="file"  onChange={handleFileChange}/>
+
       </label>
       <br />
-      <button type="submit" disabled={!file}>
+      <button type="submit" disabled={!file} className='SB'>
         Submit
       </button>
     </form>
