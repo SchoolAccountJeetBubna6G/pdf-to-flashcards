@@ -15,7 +15,7 @@ function App() {
           <FileInputForm />
         </section>
       </main>
-      <StepHTML/> {/*I am still working on this as of 11th of april 2023 Ima puah it anyway*/}
+      <StepHTML/>
     </>
   );
 }
