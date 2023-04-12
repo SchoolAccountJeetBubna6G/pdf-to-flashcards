@@ -1,7 +1,19 @@
 import React, { useState } from 'react';
+import Tesseract from 'tesseract.js';
 
 function FileInputForm() {
   const [file, setFile] = useState(null);
+  const [text, setText] = useState('');
+
+  const generateText = ()=>{
+    Tesseract.recognize(
+      file,
+      'eng',
+      { logger: m => console.log(m) }
+    ).then(({ data: { text } }) => {
+      setText(text);
+    })
+  }
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
@@ -10,20 +22,22 @@ function FileInputForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // do something with the selected file
-    console.log(file);
+    console.log(file)
+    generateText();
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label className="UB">
-        <input type="file"  onChange={handleFileChange}/>
-
-      </label>
+    <div>
+      <form onSubmit={handleSubmit}>
+      <input type="file" className="btn btn-primary btn-lg" onChange={handleFileChange} />
       <br />
-      <button type="submit" disabled={!file} className='SB'>
+      <button type="submit" disabled={!file} className='SubmitButton'>
         Submit
-      </button>
+      </button> 
     </form>
+    <h3>{text}</h3>
+    </div>
+    
   );
 }
 

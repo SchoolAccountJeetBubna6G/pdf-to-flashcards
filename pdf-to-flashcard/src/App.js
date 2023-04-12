@@ -8,8 +8,8 @@ function App() {
       <Navbar title="Pdf to questions" />
       <main className="mB">
         <section className="Titles">
-          <h1>Upload your PDF</h1>
-          <h5></h5>
+          <b><h1>Upload your PDF</h1></b>
+          <h5>Convert your text book to questions!</h5>
         </section>
         <section className="UD">
           <FileInputForm />

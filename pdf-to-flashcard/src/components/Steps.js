@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import '../App.css'
 
 function StepHTML() {
   return (
@@ -9,7 +10,7 @@ function StepHTML() {
           </div>
           <div className="cardContent">
                <section className="Title">Steps</section>
-               <section className="Description">
+               <section className="Description text-black">
                     lorem ipsum dolor sit amet, consectetur adip 
                </section>
           </div>

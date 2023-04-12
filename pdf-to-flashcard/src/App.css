@@ -32,17 +32,23 @@ h1 {
   margin-bottom: 15%;
   margin-top:2vh;
 }
-.UB {
+.UploadButton {
   /* This is supposed to be for the submit button only but it applies to the "No file choosen" Need to FIX */
   top: 28vh; /*  The % value is not appling need to FIX */
+  padding:10px;
+  color:white;
   position: relative;
+  color: rgba(0, 0, 0, 0);
+  background-color: #1a8fe3;
 }
 input[type="file"] {
   color: rgba(0, 0, 0, 0);
   display: block;
-  background-color: blue;
+  background-color: #1a8fe3;
+  padding: 20px;
+  border-radius: 10px;
 }
-.SB{
+.SubmitButton{
      top: 45vh;
      position: relative;
      background-color: blanchedalmond;
@@ -66,4 +72,8 @@ input[type="file"] {
 }
 .cardContent{
   float: left;
+}
+
+.Title {
+  font-size: 3em;
 }
