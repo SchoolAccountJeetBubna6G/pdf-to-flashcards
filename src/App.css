@@ -41,13 +41,6 @@ h1 {
   color: rgba(0, 0, 0, 0);
   background-color: #1a8fe3;
 }
-input[type="file"] {
-  color: rgba(0, 0, 0, 0);
-  display: block;
-  background-color: #1a8fe3;
-  padding: 20px;
-  border-radius: 10px;
-}
 .SubmitButton{
      top: 45vh;
      position: relative;

@@ -1,7 +1,7 @@
 import React from "react";
 import '../App.css'
 
-function StepHTML() {
+function Steps(props) {
   return (
     <section className="SD">
      <div className="card1">
@@ -11,7 +11,7 @@ function StepHTML() {
           <div className="cardContent">
                <section className="Title">Steps</section>
                <section className="Description text-black">
-                    lorem ipsum dolor sit amet, consectetur adip 
+                    {props.steps}
                </section>
           </div>
      </div>
@@ -19,4 +19,4 @@ function StepHTML() {
   );
 }
 
-export default StepHTML
+export default Steps
